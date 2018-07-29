@@ -1,5 +1,8 @@
 // Styling for the download section
 section.download {
+    
+    background: url('../img/bg-pattern2.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    
     position: relative;
     padding: 150px 0;
     h2 {
