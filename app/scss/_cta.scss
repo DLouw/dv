@@ -2,9 +2,7 @@
 section.cta {
     position: relative;
     padding: 250px 0;
-    background-image: url('../img/bg-cta.jpg');
-    background-position: center;
-    @include background-cover;
+    background-color: $theme-secondary;
     .cta-content {
         position: relative;
         z-index: 1;
