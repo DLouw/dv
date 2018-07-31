@@ -1,0 +1,34 @@
+// Styling for the call to action section
+section.bizone {
+    position: relative;
+    background-color: $theme-secondary;
+    padding: 0px;
+
+    
+    .vid{
+        padding: 0px;
+    }
+    
+    .wrapper{
+        width: 100vw;
+        height: 56.35vw;
+        overflow: hidden;
+        min-height: 600px;
+    }
+    
+    iframe{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .abswrap{
+        position: absolute;
+    }
+    
+    
+    .overlay-text{
+        position: relative;
+    }
+}

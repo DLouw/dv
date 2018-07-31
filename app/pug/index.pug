@@ -15,7 +15,7 @@ html(lang='en')
     link(href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Muli', rel='stylesheet')
     // Plugin CSS
-    link(rel='stylesheet', href='device-mockups/device-mockups.min.css')
+    //link(rel='stylesheet', href='device-mockups/device-mockups.min.css')
     // Custom styles for this template
     link(href='css/stylesheet.min.css', rel='stylesheet')
   body#page-top
@@ -52,7 +52,7 @@ html(lang='en')
                     img.img-fluid(src='img/demo-screen-1.jpg', alt='')
                   .button
                     // You can hook the "home button" to some JavaScript events or just remove it
-    section#download.download.bg-primary.text-center
+    section.download.download.bg-primary.text-center
       .container
         .row
           .col-md-8.mx-auto
@@ -95,32 +95,26 @@ html(lang='en')
                     i.icon-people.text-primary
                     h3 Continued support
                     p.text-muted Digivate is a long term partner for success- guiding you on the entire journey.
-    section.cta
-      .cta-content
-        .container
-          iframe(width="100%", height="100%", src="//www.youtube.com/embed/qUJYqhKZrwA?autoplay=0&showinfo=0&controls=0", frameborder="0",  allowfullscreen)
-          h2
-            | Solve modern business
-            br
-            | With SAP Business One
-          a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#contact') Let's Get Started!
-      .overlay
+    section.bizone
+        .wrapper.centre-y
+          iframe(src="//www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=0&mute=1&showinfo=0&controls=0", frameborder="0",  allowfullscreen)
+          .abswrap.w-100.h-100.centre-xy  
+            .overlay-text.ml-5
+              h2
+                | Modern business. Solved.
+                br
+                | With SAP Business One
+              a.btn.btn-outline.btn-xl.js-scroll-trigger(href='https://www.sap.com/africa/products/business-one/features.html', target='_blank') Learn more
     section#contact.contact.bg-primary
-      .container
-        h2
-          | We
-          i.fa.fa-heart
-          |           new friends!
-        ul.list-inline.list-social
-          li.list-inline-item.social-twitter
-            a(href='#')
-              i.fa.fa-twitter
-          li.list-inline-item.social-facebook
-            a(href='#')
-              i.fa.fa-facebook
-          li.list-inline-item.social-google-plus
-            a(href='#')
-              i.fa.fa-google-plus
+        .container
+            .row
+                .col-md-6
+                    i.icon.icon-bulb
+                    h3 Start a discussion 
+                    p [click here for email address]
+                .col-md-6
+                    i.icon.icon-arrow-up
+                    h3 Back to top
     footer
       .container
         p © Created by Tourmalet Media 2018. All Rights Reserved.

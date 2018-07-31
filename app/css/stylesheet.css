@@ -62,6 +62,12 @@ section h2 {
   align-items: center;
 }
 
+.centre-y {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
@@ -168,6 +174,7 @@ header.masthead {
   background: url("../img/grow.png");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 header.masthead .header-content {
@@ -296,7 +303,6 @@ section.features .feature-item i {
 
 section.cta {
   position: relative;
-  padding: 250px 0;
   background-color: #7b4397;
 }
 
@@ -330,6 +336,13 @@ section.cta .overlay {
 
 section.contact {
   text-align: center;
+}
+
+section.contact .icon {
+  font-size: 80px;
+  display: block;
+  margin-bottom: 15px;
+  color: black important;
 }
 
 section.contact h2 {
@@ -402,6 +415,37 @@ footer ul li a {
 
 footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
   text-decoration: none;
+}
+
+section.bizone {
+  position: relative;
+  background-color: #7b4397;
+  padding: 0px;
+}
+
+section.bizone .vid {
+  padding: 0px;
+}
+
+section.bizone .wrapper {
+  width: 100vw;
+  height: 56.35vw;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+section.bizone iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+section.bizone .abswrap {
+  position: absolute;
+}
+
+section.bizone .overlay-text {
+  position: relative;
 }
 
 .bg-primary {
