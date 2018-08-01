@@ -59,6 +59,7 @@ $(document).ready(function(){
         setTimeout(function(){
            $("#splash").animate({opacity: 0}, 500, function(){
                $(this).hide();
+               $("body").removeClass("no-scroll");
            }); 
         }, time);
     }

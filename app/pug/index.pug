@@ -18,7 +18,7 @@ html(lang='en')
     //link(rel='stylesheet', href='device-mockups/device-mockups.min.css')
     // Custom styles for this template
     link(href='css/stylesheet.min.css', rel='stylesheet')
-  body#page-top(onload="splash(3000)")
+  body.no-scroll#page-top(onload="splash(300)")
     // Splash screen
     #splash.splash.centre-xy
         .wrapper
@@ -45,7 +45,7 @@ html(lang='en')
             .header-content.mx-auto
               h1.mb-5.text-dark
                 | Helping businesses grow with innovative digital solutions
-              a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#contact') Ask us how
+              a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#features') Ask us how
           //.col-lg-5.my-auto
             .device-container
               .device-mockup.iphone6_plus.portrait.white
@@ -100,8 +100,8 @@ html(lang='en')
                     p.text-muted Digivate is a holistic partner for success- guiding you on the entire journey.
     section#bizone.bizone
         .wrapper
-          //iframe(src="//www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=0&mute=1&showinfo=0&controls=0", frameborder="0",  allowfullscreen)
-          .overlay.w-100.h-100.centre-xy  
+          iframe(src="//www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=1&mute=1&showinfo=0&controls=0&loop=1", frameborder="0",  allowfullscreen)
+          .overlay.centre-xy  
             .overlay-text
               h2
                 | Modern business. Solved.
@@ -111,7 +111,7 @@ html(lang='en')
     section#contact.contact.bg-primary
         .container
             .row
-                .col-md-6
+                .col-md-6.mb-5
                     a#mailshow.service(href="",onclick="event.preventDefault();")
                         i.icon.icon-bulb
                     h3 Get in touch
