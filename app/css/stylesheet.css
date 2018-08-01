@@ -65,13 +65,13 @@ section h2 {
 
 .centre-y {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
+  opacity: 0.8;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -169,13 +169,13 @@ section h2 {
 header.masthead {
   position: relative;
   width: 100%;
+  height: 100%;
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
   background: url("../img/grow.png");
-  background-position: center;
+  background-position: right;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 header.masthead .header-content {
@@ -325,6 +325,7 @@ section.cta .overlay {
 
 section.contact {
   text-align: center;
+  background: url("../img/bg-pattern2.png"), linear-gradient(to left, #dc2430, #dc2430);
 }
 
 section.contact .icon {

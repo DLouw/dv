@@ -3,6 +3,7 @@ header.masthead {
     position: relative;
 
     width: 100%;
+    height: 100%;
     padding-top: 150px;
     padding-bottom: 100px;
 
@@ -11,9 +12,8 @@ header.masthead {
     //background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
     //background: url('../img/bg-pattern2.png'), url('../img/grow.png');
     background: url('../img/grow.png');
-    background-position: center;
+    background-position: right;
     background-size: cover;
-    background-attachment: fixed;
     .header-content {
         max-width: 500px;
         margin-bottom: 100px;
