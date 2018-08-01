@@ -2,6 +2,8 @@ html,
 body {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 body {
@@ -18,6 +20,10 @@ a {
 a:hover, a:focus {
   color: #ab0600;
   text-decoration: none;
+}
+
+a:focus {
+  outline: none;
 }
 
 hr {
@@ -217,39 +223,39 @@ header.masthead .device-container .screen img {
   }
 }
 
-section.download {
+section.whyus {
   background: url("../img/bg-pattern2.png"), linear-gradient(to left, #7b4397, #dc2430);
   position: relative;
   padding: 150px 0;
 }
 
-section.download h2 {
+section.whyus h2 {
   font-size: 50px;
   margin-top: 0;
 }
 
-section.download .badges .badge-link {
+section.whyus .badges .badge-link {
   display: block;
   margin-bottom: 25px;
 }
 
-section.download .badges .badge-link:last-child {
+section.whyus .badges .badge-link:last-child {
   margin-bottom: 0;
 }
 
-section.download .badges .badge-link img {
+section.whyus .badges .badge-link img {
   height: 60px;
 }
 
 @media (min-width: 768px) {
-  section.download .badges .badge-link {
+  section.whyus .badges .badge-link {
     display: inline-block;
     margin-bottom: 0;
   }
 }
 
 @media (min-width: 768px) {
-  section.download h2 {
+  section.whyus h2 {
     font-size: 70px;
   }
 }
@@ -302,37 +308,21 @@ section.features .feature-item i {
   -webkit-text-fill-color: transparent;
 }
 
-section.cta {
-  position: relative;
-  background-color: #7b4397;
-}
-
-section.cta .cta-content {
-  position: relative;
-  z-index: 1;
-}
-
-section.cta .cta-content h2 {
-  font-size: 50px;
-  max-width: 450px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  color: white;
-}
-
-@media (min-width: 768px) {
-  section.cta .cta-content h2 {
-    font-size: 80px;
-  }
-}
-
-section.cta .overlay {
+.splash {
+  background-color: white;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  transition: all 1s ease-out;
+  opacity: 1;
+}
+
+.splash .logoload {
+  width: 150px;
 }
 
 section.contact {
@@ -424,12 +414,9 @@ section.bizone {
   padding: 0px;
 }
 
-section.bizone .vid {
-  padding: 0px;
-}
-
 section.bizone .wrapper {
-  width: 100vw;
+  position: relative;
+  width: 100%;
   height: 56.35vw;
   overflow: hidden;
   min-height: 600px;
@@ -441,8 +428,10 @@ section.bizone iframe {
   height: 100%;
 }
 
-section.bizone .abswrap {
+section.bizone .overlay {
   position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 section.bizone .overlay-text {

@@ -3,6 +3,8 @@ html,
 body {
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 0;
 }
 
 body {
@@ -19,6 +21,8 @@ a {
     }
     
 }
+
+a:focus { outline: none }
 
 hr {
     max-width: 100px;

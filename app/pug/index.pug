@@ -18,7 +18,11 @@ html(lang='en')
     //link(rel='stylesheet', href='device-mockups/device-mockups.min.css')
     // Custom styles for this template
     link(href='css/stylesheet.min.css', rel='stylesheet')
-  body#page-top
+  body#page-top(onload="splash(3000)")
+    // Splash screen
+    #splash.splash.centre-xy
+        .wrapper
+            img.logoload(src="img/logo.svg")
     // Navigation
     nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
       .container
@@ -30,9 +34,9 @@ html(lang='en')
         #navbarResponsive.collapse.navbar-collapse
           ul.navbar-nav.ml-auto
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#download') Download
+              a.nav-link.js-scroll-trigger(href='#whyus') Why Digivate
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#features') Features
+              a.nav-link.js-scroll-trigger(href='#bizone') Learn more
             li.nav-item
               a.nav-link.js-scroll-trigger(href='#contact') Contact
     header.masthead
@@ -52,7 +56,7 @@ html(lang='en')
                     img.img-fluid(src='img/demo-screen-1.jpg', alt='')
                   .button
                     // You can hook the "home button" to some JavaScript events or just remove it
-    section.download.download.bg-primary.text-center
+    section#whyus.whyus.bg-primary.text-center
       .container
         .row
           .col-md-8.mx-auto
@@ -95,11 +99,11 @@ html(lang='en')
                     i.icon-people.text-primary
                     h3 Continued support
                     p.text-muted Digivate is a long term partner for success- guiding you on the entire journey.
-    section.bizone
-        .wrapper.centre-y
-          iframe(src="//www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=0&mute=1&showinfo=0&controls=0", frameborder="0",  allowfullscreen)
-          .abswrap.w-100.h-100.centre-xy  
-            .overlay-text.ml-5
+    section#bizone.bizone
+        .wrapper
+          //iframe(src="//www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=0&mute=1&showinfo=0&controls=0", frameborder="0",  allowfullscreen)
+          .overlay.w-100.h-100.centre-xy  
+            .overlay-text
               h2
                 | Modern business. Solved.
                 br
@@ -109,10 +113,10 @@ html(lang='en')
         .container
             .row
                 .col-md-6
-                    a#mailshow
+                    a#mailshow.service(href="",onclick="event.preventDefault();")
                         i.icon.icon-bulb
                     h3 Get in touch
-                    a.mail [click the bulb for email address]
+                    a#mailaddress(href="") [click the bulb for email address]
                 .col-md-6
                     a.js-scroll-trigger.text-dark(href="#page-top")
                         i.icon.icon-arrow-up

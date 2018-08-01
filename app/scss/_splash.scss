@@ -1,0 +1,16 @@
+.splash{
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    transition: all 1s ease-out;
+    opacity: 1;
+    
+    .logoload{
+        width: 150px;
+    }
+}
