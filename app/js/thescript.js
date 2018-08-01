@@ -44,14 +44,21 @@
 $(document).ready(function(){
     
     var parts = ['greeshma', '@', 'digivate', '.', 'com'];
-    var elems = document.getElementsByClassName('mail');
-    var len = elems.length;
     
     $("#mailshow").click(function(){
-        
-        $(".mail").href = 'mailto:' + parts.join('');
-        $(".mail").text = parts.join();
+        console.log("clicked");
+        $("#mailaddress").prop("href", "mailto:" + parts.join(''));
+        $("#mailaddress").text(parts.join(''));
     });
     
     
 });
+
+  function splash(param) {
+        var time = param;
+        setTimeout(function(){
+           $("#splash").animate({opacity: 0}, 500, function(){
+               $(this).hide();
+           }); 
+        }, time);
+    }
