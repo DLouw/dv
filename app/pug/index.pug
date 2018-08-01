@@ -42,7 +42,7 @@ html(lang='en')
             .header-content.mx-auto
               h1.mb-5.text-dark
                 | Helping businesses grow with innovative digital solutions
-              a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#download') Ask us how
+              a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#contact') Ask us how
           //.col-lg-5.my-auto
             .device-container
               .device-mockup.iphone6_plus.portrait.white
@@ -109,11 +109,13 @@ html(lang='en')
         .container
             .row
                 .col-md-6
-                    i.icon.icon-bulb
-                    h3 Start a discussion 
-                    p [click here for email address]
+                    a#mailshow
+                        i.icon.icon-bulb
+                    h3 Get in touch
+                    a.mail [click the bulb for email address]
                 .col-md-6
-                    i.icon.icon-arrow-up
+                    a.js-scroll-trigger.text-dark(href="#page-top")
+                        i.icon.icon-arrow-up
                     h3 Back to top
     footer
       .container

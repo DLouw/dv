@@ -40,3 +40,18 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+$(document).ready(function(){
+    
+    var parts = ['greeshma', '@', 'digivate', '.', 'com'];
+    var elems = document.getElementsByClassName('mail');
+    var len = elems.length;
+    
+    $("#mailshow").click(function(){
+        
+        $(".mail").href = 'mailto:' + parts.join('');
+        $(".mail").text = parts.join();
+    });
+    
+    
+});

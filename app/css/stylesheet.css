@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  color: #DE0800;
+  color: black;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -17,6 +17,7 @@ a {
 
 a:hover, a:focus {
   color: #ab0600;
+  text-decoration: none;
 }
 
 hr {
