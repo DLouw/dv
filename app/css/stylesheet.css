@@ -266,22 +266,6 @@ section.features .section-heading p {
   margin-bottom: 0;
 }
 
-section.features .device-container,
-section.features .feature-item {
-  max-width: 325px;
-  margin: 0 auto;
-}
-
-section.features .device-container {
-  margin-bottom: 100px;
-}
-
-@media (min-width: 992px) {
-  section.features .device-container {
-    margin-bottom: 0;
-  }
-}
-
 section.features .feature-item {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -293,13 +277,17 @@ section.features .feature-item h3 {
 }
 
 section.features .feature-item i {
-  font-size: 80px;
+  font-size: 60px;
   display: block;
   margin-bottom: 15px;
   background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
   background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+section.features .feature-logo {
+  width: 150px;
 }
 
 section.cta {

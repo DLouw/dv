@@ -9,17 +9,7 @@ section.features {
             margin-bottom: 0;
         }
     }
-    .device-container,
-    .feature-item {
-        max-width: 325px;
-        margin: 0 auto;
-    }
-    .device-container {
-        margin-bottom: 100px;
-        @media(min-width: 992px) {
-            margin-bottom: 0;
-        }
-    }
+
     .feature-item {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -28,7 +18,7 @@ section.features {
             font-size: 30px;
         }
         i {
-            font-size: 80px;
+            font-size: 60px;
             display: block;
             margin-bottom: 15px;
             background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
@@ -36,5 +26,9 @@ section.features {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+    }
+    
+    .feature-logo{
+        width: 150px;
     }
 }
