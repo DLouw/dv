@@ -30,6 +30,7 @@
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
+      console.log("navshrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
     }
@@ -43,7 +44,7 @@
 
 $(document).ready(function(){
     
-    var parts = ['greeshma', '@', 'digivate', '.', 'com'];
+    var parts = ['info', '@', 'digivate', '.', 'co.za'];
     
     $("#mailshow").click(function(){
         console.log("clicked");
@@ -54,12 +55,12 @@ $(document).ready(function(){
     
 });
 
-  function splash(param) {
-        var time = param;
-        setTimeout(function(){
-           $("#splash").animate({opacity: 0}, 500, function(){
-               $(this).hide();
-               $("body").removeClass("no-scroll");
-           }); 
-        }, time);
-    }
+function splash(param) {
+    var time = param;
+    setTimeout(function(){
+       $("#splash").animate({opacity: 0}, 500, function(){
+           $(this).hide();
+           $("body").removeClass("no-scroll");
+       }); 
+    }, time);
+}

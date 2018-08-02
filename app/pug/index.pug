@@ -18,11 +18,18 @@ html(lang='en')
     //link(rel='stylesheet', href='device-mockups/device-mockups.min.css')
     // Custom styles for this template
     link(href='css/stylesheet.min.css', rel='stylesheet')
-  body.no-scroll#page-top(onload="splash(300)")
+    //Favicon
+    link(rel="icon", href="img/favicon.png")
+  body.no-scroll#page-top(onload="splash(3000)")
     // Splash screen
     #splash.splash.centre-xy
         .wrapper
-            img.logoload(src="img/logo.svg")
+            img#anim0(src="img/anim/0.svg")
+            img#anim1.anim(src="img/anim/1.svg")
+            img#anim2.anim(src="img/anim/2.svg")
+            img#anim3.anim(src="img/anim/3.svg")
+            img#anim4.anim(src="img/anim/4.svg")
+            img#anim5.anim(src="img/anim/5.svg")
     // Navigation
     nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
       .container
@@ -86,18 +93,18 @@ html(lang='en')
                   .feature-item
                     i.icon-equalizer.text-primary
                     h3 Bespoke solutions
-                    p.text-muted Customized, installed and integrated. We tailor solutions to your business environment.
+                    p.text-muted Customized, installed and integrated. We tailor solutions to your business environment
               .row
                 .col-lg-6
                   .feature-item
                     i.icon-graph.text-primary
                     h3 Expert consultants
-                    p.text-muted With over 10 years of experience our consultants are intimitelay familiar with the challenges SMEs face
+                    p.text-muted With over 10 years of experience our consultants are intimately familiar with the challenges SMEs face
                 .col-lg-6
                   .feature-item
                     i.icon-refresh.text-primary
                     h3 Continued support
-                    p.text-muted Digivate is a holistic partner for success- guiding you on the entire journey.
+                    p.text-muted Digivate is a holistic partner for success- guiding you on the entire journey
     section#bizone.bizone
         .wrapper
           iframe(src="//www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=1&mute=1&showinfo=0&controls=0&loop=1", frameborder="0",  allowfullscreen)
@@ -111,12 +118,17 @@ html(lang='en')
     section#contact.contact.bg-primary
         .container
             .row
-                .col-md-6.mb-5
+                .col-md-4.mb-5
                     a#mailshow.service(href="",onclick="event.preventDefault();")
                         i.icon.icon-bulb
-                    h3 Get in touch
+                    h3 Send a message
                     a#mailaddress(href="") [click the bulb for email address]
-                .col-md-6
+                .col-md-4.mb-5
+                    a
+                        i.icon.icon-phone
+                    h3 Give us a call
+                    a 082 905 8222
+                .col-md-4
                     a.js-scroll-trigger.text-dark(href="#page-top")
                         i.icon.icon-arrow-up
                     h3 Back to top

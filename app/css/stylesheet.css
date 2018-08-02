@@ -4,7 +4,7 @@ body {
   height: 100%;
   position: relative;
   z-index: 0;
-  overflow: auto;
+  overflow: visible;
 }
 
 body {
@@ -81,14 +81,13 @@ section h2 {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color: white;
-  opacity: 0.8;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #mainNav .navbar-brand {
@@ -147,7 +146,7 @@ section h2 {
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
@@ -155,7 +154,7 @@ section h2 {
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #222222;
@@ -184,7 +183,7 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/grow.png");
+  background: url("../img/grow.jpg");
   background-position: right;
   background-size: cover;
 }
@@ -226,6 +225,10 @@ header.masthead .device-container .screen img {
   header.masthead .device-container {
     max-width: 325px;
   }
+}
+
+header.masthead a {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 section.whyus {
@@ -314,8 +317,74 @@ section.features .feature-logo {
   opacity: 1;
 }
 
-.splash .logoload {
+.splash .wrapper {
   width: 150px;
+  height: 200px;
+  position: relative;
+}
+
+.splash img {
+  position: absolute;
+  width: 150px;
+  top: 0px;
+  left: 0px;
+}
+
+.splash .anim {
+  animation: dim 3s 0s infinite;
+}
+
+.splash .anim:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.splash .anim:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.splash .anim:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.splash .anim:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.splash .anim:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes dim {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 section.contact {
@@ -440,6 +509,7 @@ section.bizone .overlay {
   }
   section.bizone .overlay-text {
     max-width: 300px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   }
   section.bizone iframe {
     display: none;
@@ -447,6 +517,7 @@ section.bizone .overlay {
   section.bizone a {
     background-color: rgba(138, 63, 206, 0.8);
     border: none;
+    color: white;
   }
 }
 
