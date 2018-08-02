@@ -526,6 +526,11 @@ section.bizone .overlay-text {
   color: #8a3fce;
 }
 
+section.bizone a {
+  color: #7b4397;
+  border-color: #7b4397;
+}
+
 .bg-primary {
   background: #DE0800;
   background: -webkit-linear-gradient(#DE0800, #c50700);
