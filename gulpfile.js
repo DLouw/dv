@@ -43,6 +43,17 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('dist/vendor/jquery-easing'))
 
+  //Gsap
+    gulp.src(['node_modules/gsap/src/minified/TweenMax.min.js'])
+    .pipe(gulp.dest('dist/vendor/gsap'))
+  
+  //Scrollmagic
+    gulp.src(['node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+             'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
+             'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js'])
+    .pipe(gulp.dest('dist/vendor/scrollmagic'))
+
+
   // Simple Line Icons
   gulp.src([
       './node_modules/simple-line-icons/fonts/**',

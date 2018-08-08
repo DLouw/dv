@@ -20,7 +20,7 @@ html(lang='en')
     link(href='css/stylesheet.min.css', rel='stylesheet')
     //Favicon
     link(rel="icon", href="img/favicon.png")
-  body.no-scroll#page-top(onload="splash(3000)")
+  body.no-scroll#page-top(onload="splash(30)")
     // Splash screen
     #splash.splash.centre-xy
         .wrapper
@@ -66,16 +66,16 @@ html(lang='en')
       .container
         .row
           .col-md-8.mx-auto
-            h2.section-heading Partner your business with global industry leaders
+            h2.section-heading.twn1 Partner your business with global industry leaders
              //p 
-            p Digivate is an official SAP partner
-            .badges.mt-5
-              a.badge-link(href='#')
+            p.tween Digivate is an official SAP partner
+            .badges.mt-5.twn1b
+              a.badge-link.twn2(href='#')
                 img(src='img/sap_silver_partner.svg', alt='')
     section#features.features
       .container
         .section-heading.text-center
-          h2 What digivate can do for you
+          h2.twn1 What digivate can do for you
           p.text-muted An agile partner for sustainable growth
           hr
         .row
@@ -83,23 +83,23 @@ html(lang='en')
             img.feature-logo.mb-5(src="img/logo.svg")
           .col-lg-8.my-auto
             .container-fluid
-              .row
+              .row.row1
                 .col-lg-6
                   .feature-item
                     i.icon-pie-chart.text-primary
                     h3 Integrated systems
-                    p.text-muted We help SMEs put the right business systems in place to thrive in local and global markets
+                    p.text-muted.twn2 We help SMEs put the right business systems in place to thrive in local and global markets
                 .col-lg-6
                   .feature-item
                     i.icon-equalizer.text-primary
                     h3 Bespoke solutions
-                    p.text-muted Customized, installed and integrated. We tailor solutions to your business environment
-              .row
+                    p.text-muted.twn2 Customized, installed and integrated. We tailor solutions to your business environment
+              .row.row2
                 .col-lg-6
                   .feature-item
                     i.icon-graph.text-primary
                     h3 Expert consultants
-                    p.text-muted With over 10 years of experience our consultants are intimately familiar with the challenges SMEs face
+                    p.text-muted.twn2 With over 10 years of experience our consultants are intimately familiar with the challenges SMEs face
                 .col-lg-6
                   .feature-item
                     i.icon-refresh.text-primary
@@ -107,7 +107,7 @@ html(lang='en')
                     p.text-muted Digivate is a holistic partner for success- guiding you on the entire journey
     section#bizone.bizone
         .wrapper
-          iframe(src="//www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=1&mute=1&showinfo=0&controls=0&loop=1", frameborder="0",  allowfullscreen)
+          //iframe(src="https://www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=1&mute=1&showinfo=0&controls=0&loop=1", frameborder="0",  allowfullscreen)
           .overlay.centre-xy  
             .overlay-text
               h2
@@ -147,5 +147,11 @@ html(lang='en')
     script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
     // Plugin JavaScript
     script(src='vendor/jquery-easing/jquery.easing.min.js')
+    //Gsap animation engine
+    script(src="vendor/gsap/TweenMax.min.js")
+    //Scrolmagic
+    script(src="vendor/scrollmagic/ScrollMagic.min.js")
+    script(src="vendor/scrollmagic/animation.gsap.min.js")
+    script(src="vendor/scrollmagic/debug.addIndicators.min.js")
     // Custom scripts for this template
     script(src='js/thescript.min.js')

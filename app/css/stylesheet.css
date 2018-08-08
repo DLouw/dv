@@ -393,57 +393,9 @@ section.contact {
 }
 
 section.contact .icon {
-  font-size: 80px;
-  display: block;
-  margin-bottom: 15px;
-  color: black important;
-}
-
-section.contact h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-section.contact h2 i {
-  color: #dd4b39;
-}
-
-section.contact ul.list-social {
-  margin-bottom: 0;
-}
-
-section.contact ul.list-social li a {
   font-size: 40px;
-  line-height: 80px;
-  display: block;
-  width: 80px;
-  height: 80px;
-  color: white;
-  border-radius: 100%;
-}
-
-section.contact ul.list-social li.social-twitter a {
-  background-color: #1da1f2;
-}
-
-section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
-}
-
-section.contact ul.list-social li.social-facebook a {
-  background-color: #3b5998;
-}
-
-section.contact ul.list-social li.social-facebook a:hover {
-  background-color: #344e86;
-}
-
-section.contact ul.list-social li.social-google-plus a {
-  background-color: #dd4b39;
-}
-
-section.contact ul.list-social li.social-google-plus a:hover {
-  background-color: #d73925;
+  margin-bottom: 15px;
+  color: #212529;
 }
 
 footer {
@@ -475,6 +427,9 @@ section.bizone {
   position: relative;
   background-color: #7b4397;
   padding: 0px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 section.bizone .wrapper {
@@ -498,18 +453,27 @@ section.bizone .overlay {
   height: 100%;
   left: 0px;
   top: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+section.bizone .overlay-text {
+  position: relative;
+  color: #7b4397;
+}
+
+section.bizone a {
+  color: #7b4397;
+  border-color: #7b4397;
 }
 
 @media only screen and (max-width: 961px) {
   section.bizone .overlay {
-    background-image: url(../img/sapbizone.png);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
   }
   section.bizone .overlay-text {
     max-width: 300px;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   }
   section.bizone iframe {
     display: none;
@@ -517,18 +481,8 @@ section.bizone .overlay {
   section.bizone a {
     background-color: rgba(138, 63, 206, 0.8);
     border: none;
-    color: white;
+    color: black;
   }
-}
-
-section.bizone .overlay-text {
-  position: relative;
-  color: #8a3fce;
-}
-
-section.bizone a {
-  color: #7b4397;
-  border-color: #7b4397;
 }
 
 .bg-primary {

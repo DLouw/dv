@@ -28,8 +28,10 @@
     "dependencies": {
         "bootstrap": "4.1.1",
         "font-awesome": "4.7.0",
+        "gsap": "^2.0.1",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
+        "scrollmagic": "^2.0.5",
         "simple-line-icons": "2.4.1"
     },
     "devDependencies": {
