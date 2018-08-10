@@ -188,6 +188,10 @@ header.masthead {
   background-size: cover;
 }
 
+header.masthead span {
+  display: inline-block;
+}
+
 header.masthead .header-content {
   max-width: 500px;
   margin-bottom: 100px;

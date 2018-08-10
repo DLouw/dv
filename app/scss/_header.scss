@@ -8,6 +8,10 @@
     background-size: cover;
     background-attachment: fixed;
     
+    span{
+        display: inline-block;
+    }
+    
     .header-content {
         max-width: 500px;
         text-align: center;
