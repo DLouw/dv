@@ -20,7 +20,7 @@ html(lang='en')
     link(href='css/stylesheet.min.css', rel='stylesheet')
     //Favicon
     link(rel="icon", href="img/favicon.png")
-  body.no-scroll#page-top(onload="splash(30)")
+  body.no-scroll#page-top(onload="splash(3000)")
     // Splash screen
     #splash.splash.centre-xy
         .wrapper
@@ -40,12 +40,14 @@ html(lang='en')
         #navbarResponsive.collapse.navbar-collapse
           ul.navbar-nav.ml-auto
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#whyus') Why Digivate
+              a.nav-link.js-scroll-trigger(href='#bizone') What we offer
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#bizone') Learn more
+              a.nav-link.js-scroll-trigger(href='#whyus') SAP Business One
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#contact') Contact
-    header.masthead
+              a.nav-link.js-scroll-trigger(href='#bizone') Support
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#contact') About Us
+    header.section-header
       .container.h-100
         .row.h-100
           .col-lg-7.my-auto
@@ -57,16 +59,7 @@ html(lang='en')
                 span.twn4.mr-3 digital 
                 span.twn5.mr-3 solutions
               a.btn.btn-outline.btn-xl.js-scroll-trigger.twn6(href='#features') Ask us how
-          //.col-lg-5.my-auto
-            .device-container
-              .device-mockup.iphone6_plus.portrait.white
-                .device
-                  .screen
-                    // Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!
-                    img.img-fluid(src='img/demo-screen-1.jpg', alt='')
-                  .button
-                    // You can hook the "home button" to some JavaScript events or just remove it
-    section#whyus.whyus.bg-primary.text-center
+    section.section-whyus.bg-primary.text-center
       .container
         .row
           .col-md-8.mx-auto
@@ -76,7 +69,7 @@ html(lang='en')
             .badges.mt-5.twn1b
               a.badge-link.twn2(href='#')
                 img(src='img/sap_silver_partner.svg', alt='')
-    section#features.features
+    section.section-features
       .container
         .section-heading.text-center
           h2.twn1 What digivate can do for you
@@ -109,16 +102,16 @@ html(lang='en')
                     i.icon-refresh.text-primary.twn2
                     h3 Continued support
                     p.text-muted.twn2 Digivate is a holistic partner for success- guiding you on the entire journey
-    section#bizone.bizone
+    section.section-bizone
         .wrapper
-          //iframe(src="https://www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=1&mute=1&showinfo=0&controls=0&loop=1", frameborder="0",  allowfullscreen)
+          iframe(src="https://www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=1&mute=1&showinfo=0&controls=0&loop=1&playlist=CHe6LLvkDnY", frameborder="0",  allowfullscreen)
           .overlay.centre-xy  
             .overlay-text
               h2.twn1 Modern business?
               h2.twn2 Solved.
               h2.twn3 With SAP Business One
               a.btn.btn-outline.btn-xl.js-scroll-trigger.twn4(href='https://www.sap.com/africa/products/business-one/features.html', target='_blank') Learn more
-    section#contact.contact.bg-primary
+    section.section-contact.bg-primary
         .container
             .row
                 .col-md-4.mb-5

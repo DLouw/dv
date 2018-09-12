@@ -46,14 +46,14 @@ var controller = new ScrollMagic.Controller();
 
 var headerTimeline = new TimelineMax({paused:"true", delay:0.5});
 
-headerTimeline.from(".masthead .twn1", 1, {opacity:0, y:100})
-    .from(".masthead .twn2", 0.4, {opacity:0}, "+=0.6")
-    .from(".masthead .twn3", 0.4, {opacity:0, scale:2, color:"#dc2430", ease:Power2.easeIn}, "+= -0.4")
-    .from(".masthead .twn4", 0.4, {opacity:0, scale:2, color:"#dc2430",ease:Power2.easeIn}, "+=0.6")
-    .from(".masthead .twn5", 0.4, {opacity:0, scale:2, color:"#dc2430",ease:Power2.easeIn}, "+=0.6")
-    .from(".masthead .twn6", 0.2, {opacity:0}, "+=0.8")
+headerTimeline.from(".section-header .twn1", 1, {opacity:0, y:100})
+    .from(".section-header .twn2", 0.4, {opacity:0}, "+=0.6")
+    .from(".section-header .twn3", 0.3, {opacity:0, scale:2, color:"#dc2430", ease:Power2.easeIn}, "+= -0.4")
+    .from(".section-header .twn4", 0.3, {opacity:0, scale:2, color:"#dc2430",ease:Power2.easeIn}, "+=0.4")
+    .from(".section-header .twn5", 0.3, {opacity:0, scale:2, color:"#dc2430",ease:Power2.easeIn}, "+=0.4")
+    .from(".section-header .twn6", 0.2, {opacity:0}, "+=0.8")
     .from("#mainNav", 0.2, {opacity:0}, "+= -0.2")
-    .to(".masthead .twn6", 0.4, {borderColor: "#dc2430"}, "+=0.6");
+    .to(".section-header .twn6", 0.4, {borderColor: "#dc2430"}, "+=0.2");
 
 $(document).ready(function(){
     
@@ -68,13 +68,13 @@ $(document).ready(function(){
     //Scroll animations
     
     
-    var whyusTween1 = TweenMax.from("#whyus .twn1", 1, {y: "300", opacity: 0, ease:Power2.easeOut});
+    var whyusTween1 = TweenMax.from(".section-whyus .twn1", 1, {y: "300", opacity: 0, ease:Power2.easeOut});
     var whyusScene1 = new ScrollMagic.Scene({triggerElement:"#whyus"})
             .setTween(whyusTween1)
             .addTo(controller);
     
-    var whyusTween2 = TweenMax.from("#whyus .twn2", 1, {opacity: 0, ease:Power2.easeOut}, 0.3);
-    var whyusScene2 = new ScrollMagic.Scene({triggerElement:"#whyus", triggerHook: "-0.55"})
+    var whyusTween2 = TweenMax.from(".section-whyus .twn2", 1, {opacity: 0, ease:Power2.easeOut}, 0.3);
+    var whyusScene2 = new ScrollMagic.Scene({triggerElement:".section-whyus", triggerHook: "-0.55"})
             .setTween(whyusTween2)
             .addTo(controller);
     
@@ -83,25 +83,21 @@ $(document).ready(function(){
             .setTween(featuresTween1)
             .addTo(controller);
     
-//    var featuresTween2 = TweenMax.from("#features .twn2", 1, {opacity: 0, ease:Power2.easeOut}, 0.3);
-//    var featuresScene2 = new ScrollMagic.Scene({triggerElement:"#features", offset: 200})
-//            .setTween(featuresTween2)
-//            .addTo(controller);
     
-    var featuresTween2 = TweenMax.staggerFrom("#features .row1 .twn2", 1, {opacity: 0, ease:Power2.easeOut}, 0.5);
-    var featuresScene2 = new ScrollMagic.Scene({triggerElement:"#features .row1"})
+    var featuresTween2 = TweenMax.staggerFrom(".section-features .row1 .twn2", 1, {opacity: 0, ease:Power2.easeOut}, 0.5);
+    var featuresScene2 = new ScrollMagic.Scene({triggerElement:".section-features .row1"})
             .setTween(featuresTween2)
             .addTo(controller);
     
     
     var bizoneTimeline = new TimelineMax();
     
-    bizoneTimeline.staggerFrom("#bizone .twn1", 1, {opacity:0})
-        .from("#bizone .twn2", 0.4, {opacity:0}, "+=0.6")
-        .from("#bizone .twn3", 0.4, {opacity:0, y: 100}, "+=0.6")
-        .from("#bizone .twn4", 0.4, {opacity:0, x:100}, "+=0.5");
+    bizoneTimeline.staggerFrom(".section-bizone .twn1", 1, {opacity:0})
+        .from(".section-bizone .twn2", 0.4, {opacity:0}, "+=0.6")
+        .from(".section-bizone .twn3", 0.4, {opacity:0, y: 100}, "+=0.6")
+        .from(".section-bizone .twn4", 0.4, {opacity:0, x:100}, "+=0.5");
     
-    var bizoneScene = new ScrollMagic.Scene({triggerElement:"#bizone .twn1"})
+    var bizoneScene = new ScrollMagic.Scene({triggerElement:".section-bizone .twn1"})
         .setTween(bizoneTimeline)
         .addTo(controller);
     
@@ -110,11 +106,6 @@ $(document).ready(function(){
     var contactScene = new ScrollMagic.Scene({triggerElement:"#contact"})
         .setTween(contactTween)
         .addTo(controller);
-    
-//    var featuresTween3 = TweenMax.staggerFrom("#features p", 1, {opacity: 0, ease:Power2.easeOut}, 0.5);
-//    var featuresScene3 = new ScrollMagic.Scene({triggerElement:"#features", triggerHook: "-0.6"})
-//            .setTween(featuresTween3)
-//            .addTo(controller);
     
     
 });
