@@ -3,7 +3,7 @@
     border-color: fade-out($gray-darker, .95);
     @include transition-all;
     @include heading-font;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.8);
     .navbar-brand {
         color: $theme-primary;
         @include heading-font;
@@ -58,7 +58,7 @@
         }
         &.navbar-shrink {
             border-color: fade-out($gray-darker, .9);
-            background-color: rgba(255,255,255,0.3);
+            background-color: rgba(255,255,255,0.8);
             .navbar-brand {
                 color: $gray-darker;
                 &:hover,

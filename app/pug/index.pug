@@ -6,19 +6,11 @@ html(lang='en')
     meta(name='description', content='digivate home')
     meta(name='author', content='Dehan Louw')
     title digivate
-    // Bootstrap core CSS
-    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
-    // Custom fonts for this template
-    link(rel='stylesheet', href='vendor/font-awesome/css/font-awesome.min.css')
-    link(rel='stylesheet', href='vendor/simple-line-icons/css/simple-line-icons.css')
-    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900', rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css?family=Muli', rel='stylesheet')
-    // Custom styles for this template
-    link(href='css/stylesheet.min.css', rel='stylesheet')
-    //Favicon
-    link(rel="icon", href="img/favicon.png")
-  body.no-scroll#page-top(onload="splash(3000)")
+    
+    //Head links
+    include includes/headlinks.pug
+    
+  body.page-home.no-scroll#page-top(onload="splash(3000)")
     // Splash screen
     #splash.splash.centre-xy
         .wrapper
@@ -30,6 +22,8 @@ html(lang='en')
             img#anim5.anim(src="img/anim/5.svg")
     // Navigation
     include includes/navbar.pug
+    
+    //Header
     header.section-header
       .container.h-100
         .row.h-100
@@ -42,6 +36,7 @@ html(lang='en')
                 span.twn4.mr-3 digital 
                 span.twn5.mr-3 solutions
               a.btn.btn-outline.btn-xl.js-scroll-trigger.twn6(href='#features') Ask us how
+    //WhyUs Section
     section.section-whyus.bg-primary.text-center
       .container
         .row
@@ -52,6 +47,7 @@ html(lang='en')
             .badges.mt-5.twn1b
               a.badge-link.twn2(href='#')
                 img(src='img/sap_silver_partner.svg', alt='')
+    //Featuers section
     section.section-features
       .container
         .section-heading.text-center
@@ -85,6 +81,7 @@ html(lang='en')
                     i.icon-refresh.text-primary.twn2
                     h3 Continued support
                     p.text-muted.twn2 Digivate is a holistic partner for success- guiding you on the entire journey
+    //BizOne Section
     section.section-bizone
         .wrapper
           iframe(src="https://www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=1&mute=1&showinfo=0&controls=0&loop=1&playlist=CHe6LLvkDnY", frameborder="0",  allowfullscreen)
@@ -94,6 +91,7 @@ html(lang='en')
               h2.twn2 Solved.
               h2.twn3 With SAP Business One
               a.btn.btn-outline.btn-xl.js-scroll-trigger.twn4(href='https://www.sap.com/africa/products/business-one/features.html', target='_blank') Learn more
+    //Contact section
     section.section-contact.bg-primary
         .container
             .row
@@ -111,7 +109,9 @@ html(lang='en')
                     a.js-scroll-trigger.text-dark(href="#page-top")
                         i.icon.icon-arrow-up
                     h3 Back to top
+    //Footer
     include includes/footer.pug
+    
     // Bootstrap core JavaScript
     script(src='vendor/jquery/jquery.min.js')
     script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')

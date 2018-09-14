@@ -11,6 +11,8 @@ body {
 body {
     
     @include body-font;
+    padding-top: 60px; // For nav bar
+    
 }
 
 .no-scroll{
@@ -31,10 +33,10 @@ a {
 a:focus { outline: none }
 
 hr {
-    max-width: 100px;
+    max-width: 300px;
     margin: 25px auto 0;
-    border-width: 1px;
-    border-color: fade-out($gray-darker, .9);
+    border-width: 1.5px;
+    border-color: fade-out($gray-darker, .9)7
 }
 
 hr.light {
@@ -57,10 +59,14 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 100px 0px !important;
     h2 {
         font-size: 50px;
     }
+}
+
+.content-section{
+    padding: 100px 20px !important;
 }
 
 .centre-xy{
@@ -76,4 +82,6 @@ section {
   align-items: center;
 }
 
-
+.bg-theme{
+    background: url('../img/bg-pattern2.png'), linear-gradient(45deg, $theme-secondary, $theme-tertiary);
+}

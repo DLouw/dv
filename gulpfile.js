@@ -69,7 +69,7 @@ gulp.task('vendor', function() {
 
 //Compile Pug
 gulp.task('pug', function() {
-    return gulp.src('app/pug/*.pug')
+    return gulp.src('app/pug/**/*.pug')
      .pipe(pug())
      .pipe(beautify())
      .pipe(gulp.dest('dist'))
@@ -141,5 +141,5 @@ gulp.task('browserSync', function() {
 gulp.task('dev', ['css', 'js', 'copy', 'pug', 'browserSync'], function() {
   gulp.watch('app/scss/*.scss', ['css']);
   gulp.watch('app/js/*.js', ['js']);
-  gulp.watch('app/pug/*.pug', ['pug']);
+  gulp.watch('app/pug/**/*.pug', ['pug']);
 });
