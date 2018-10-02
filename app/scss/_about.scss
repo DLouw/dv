@@ -1,4 +1,28 @@
 //About page stylesheet
 .page-about{
+  
+  .section-whatwedo{
+    .logo{
+        width: 150px;
+    }
+  }
+  
+  .section-mission{
+    .subscript{
+      color: $theme-primary;
+    }
+  }
+  
+  .comp-heading {
+    display: inline;
+  }
+    
+//    .section-content{
+//        .content-container{
+//            max-width: 768px;
+//        }
+//    }
+    
+   
     
 }

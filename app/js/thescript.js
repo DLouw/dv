@@ -30,7 +30,6 @@
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
-      console.log("navshrink");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
     }
@@ -42,18 +41,10 @@
 
 })(jQuery); // End of use strict
 
+//sessionStorage.setItem("firstLoad", "");
+console.log(sessionStorage);
+
 var controller = new ScrollMagic.Controller();
-
-var headerTimeline = new TimelineMax({paused:"true", delay:0.5});
-
-headerTimeline.from(".section-header .twn1", 1, {opacity:0, y:100})
-    .from(".section-header .twn2", 0.4, {opacity:0}, "+=0.6")
-    .from(".section-header .twn3", 0.3, {opacity:0, scale:2, color:"#dc2430", ease:Power2.easeIn}, "+= -0.4")
-    .from(".section-header .twn4", 0.3, {opacity:0, scale:2, color:"#dc2430",ease:Power2.easeIn}, "+=0.4")
-    .from(".section-header .twn5", 0.3, {opacity:0, scale:2, color:"#dc2430",ease:Power2.easeIn}, "+=0.4")
-    .from(".section-header .twn6", 0.2, {opacity:0}, "+=0.8")
-    .from("#mainNav", 0.2, {opacity:0}, "+= -0.2")
-    .to(".section-header .twn6", 0.4, {borderColor: "#dc2430"}, "+=0.2");
 
 $(document).ready(function(){
     
@@ -107,16 +98,43 @@ $(document).ready(function(){
         .setTween(contactTween)
         .addTo(controller);
     
+    //About page animation
+    //What we do list 
+    var aboutTween = TweenMax.staggerFrom(".page-about .tw1", 1, {opacity: 0, scale: 1.5, ease:Power3.easeIn}, 0.2);
+    var featuresScene2 = new ScrollMagic.Scene({triggerElement:".section-whatwedo .do-list"})
+            .setTween(aboutTween)
+            .addTo(controller);
+    
     
 });
 
 function splash(param) {
-    var time = param;
-    setTimeout(function(){
-       $("#splash").animate({opacity: 0}, 500, function(){
+    if(sessionStorage.getItem("firstLoad") == "true"){
+        $("#splash").hide();
+        $("body").removeClass("no-scroll");
+    } else{
+        
+        //Create timeline for header
+        var headerTimeline = new TimelineMax({paused:"true", delay:0.5});
+
+        headerTimeline.from(".section-header .twn1", 1, {opacity:0, y:100})
+                      .from(".section-header .twn2", 0.4, {opacity:0}, "+=0.6")
+                      .from(".section-header .twn3", 0.3, {opacity:0, scale:2, color:"#dc2430", ease:Power2.easeIn}, "+= -0.4")
+                      .from(".section-header .twn4", 0.3, {opacity:0, scale:2, color:"#dc2430",ease:Power2.easeIn}, "+=0.4")
+                      .from(".section-header .twn5", 0.3, {opacity:0, scale:2, color:"#dc2430",ease:Power2.easeIn}, "+=0.4")
+                      .from(".section-header .twn6", 0.2, {opacity:0}, "+=0.8")
+                      .from("#mainNav", 0.2, {opacity:0}, "+= -0.2")
+                      .to(".section-header .twn6", 0.4, {borderColor: "#dc2430"}, "+=0.2");
+        
+        sessionStorage.setItem("firstLoad", "true");
+        var time = param;
+      
+        setTimeout(function(){
+           $("#splash").animate({opacity: 0}, 500, function(){
            $(this).hide();
            $("body").removeClass("no-scroll");
            headerTimeline.play();
-       }); 
-    }, time);
+          }); 
+        }, time); 
+    }
 }

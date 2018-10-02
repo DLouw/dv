@@ -34,7 +34,7 @@ a:focus {
 
 hr {
   max-width: 300px;
-  margin: 25px auto 0;
+  margin: 0 auto;
   border-width: 1.5px;
   border-color: rgba(34, 34, 34, 0.1) 7;
 }
@@ -61,11 +61,20 @@ p {
 }
 
 section {
-  padding: 100px 0px !important;
+  padding: 50px 5px !important;
 }
 
 section h2 {
   font-size: 50px;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 100px 0px !important;
+  }
+  section h2 {
+    font-size: 50px;
+  }
 }
 
 .content-section {
@@ -86,6 +95,25 @@ section h2 {
 
 .bg-theme {
   background: url("../img/bg-pattern2.png"), linear-gradient(45deg, #7b4397, #dc2430);
+}
+
+.content-p {
+  max-width: 500px;
+}
+
+.theme-icon {
+  font-size: 60px;
+  display: block;
+  margin-bottom: 15px;
+  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-title {
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .bg-primary {
@@ -233,6 +261,10 @@ footer {
 footer p {
   font-size: 12px;
   margin: 0;
+}
+
+footer .logo {
+  width: 50px;
 }
 
 footer ul {
@@ -467,16 +499,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 30px;
 }
 
-.page-home .section-features .feature-item i {
-  font-size: 60px;
-  display: block;
-  margin-bottom: 15px;
-  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: linear-gradient(to left, #7b4397, #dc2430);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .page-home .section-features .feature-logo {
   width: 150px;
 }
@@ -552,4 +574,29 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 40px;
   margin-bottom: 15px;
   color: #212529;
+}
+
+.page-sollutions .section-content .video-wrapper {
+  width: 60%;
+  height: 40vw;
+  background-color: black;
+}
+
+.page-about .section-whatwedo .logo {
+  width: 150px;
+}
+
+.page-about .section-mission .subscript {
+  color: #DE0800;
+}
+
+.page-about .comp-heading {
+  display: inline;
+}
+
+.page-contact .section-contact .map {
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
 }

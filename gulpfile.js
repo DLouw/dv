@@ -22,11 +22,8 @@ gulp.task('vendor', function() {
 
   // Font Awesome
   gulp.src([
-      './node_modules/font-awesome/**/*',
-      '!./node_modules/font-awesome/{less,less/*}',
-      '!./node_modules/font-awesome/{scss,scss/*}',
-      '!./node_modules/font-awesome/.*',
-      '!./node_modules/font-awesome/*.{txt,json,md}'
+      './node_modules/@fortawesome/fontawesome-free/*css/all.css',
+      './node_modules/@fortawesome/fontawesome-free/*webfonts/**/*'
     ])
     .pipe(gulp.dest('dist/vendor/font-awesome'))
 
@@ -132,7 +129,8 @@ gulp.task('default', ['css', 'js', 'vendor', 'copy', 'pug']);
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'dist'
+      baseDir: 'dist',
+      index: 'about.html'
     }
   });
 });

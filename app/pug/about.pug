@@ -15,13 +15,43 @@ html(lang='en')
     include includes/navbar.pug
     // Header
     section.section-header.bg-theme.text-center
-        h2 This is Digivate
-        h3 Why we are digital disruptives
-    //Sap section
-    section.section-intro.text-center
-        h3 SAP Business One
-        h4.text-muted The swiss army ERP package
+        h1.page-title About Us
+        //h3 World class ERP sollutions for ambitious SMEs
+    //Content
+    section.section-mission
+        .container.content-container
+            .row
+                .col-md-8
+                    h2.comp-heading Business as
+                      span 
+                        h2.comp-heading.text-muted (un)
+                      | usual
+                    p.content-p.text-muted Not all SMEs are created equal. Luckily, neither are all business partners. At Digivate, the key to our (and your) success lies in our appreciation of the uniqueness of each customer. We are not in the business of simply selling services, but rather labour to create mutually prosporous partnerships. No matter your vision, timeline or budget, we are eager to engage in a conversation about how to get your business bursting at the seams.
+                .col-md-4.mb-3
+                      //img.logo(src="img/logo.svg")
+                      p.text-muted Provide SMEs with no-nonsense, ROI driven sollutions to day to day business problems.
+                      h4.subscript - our mission
     hr
+    section.section-whatwedo.text-center
+        .container
+          h3.mb-3 What we do- exactly
+          p.text-muted When we say "no-nonsense" we mean it. Here's how we transform businesses:
+          .row
+            .col-md-6.centre-xy
+               img.logo.mb-3(src="img/logo.svg")
+            .col-md-6
+                ul.do-list.text-left
+                    li
+                        p.tw1 Comprehensive business analysys.
+                    li
+                        p.tw1 Identification of business functions which can be improved or automated.
+                    li
+                        p.tw1 Supply cutting edge business software sollutions. 
+                    li
+                        p.tw1 Fascilitate a seamless integration into current operations.
+                    li
+                        p.tw1 Provide ongoing support.
+
     // Footer
     include includes/footer.pug
     // Bootstrap core JavaScript
@@ -29,4 +59,9 @@ html(lang='en')
     script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
     // Plugin JavaScript
     script(src='vendor/jquery-easing/jquery.easing.min.js')
+    //Gsap animation engine
+    script(src="vendor/gsap/TweenMax.min.js")
+    //Scrolmagic
+    script(src="vendor/scrollmagic/ScrollMagic.min.js")
+    script(src="vendor/scrollmagic/animation.gsap.min.js")
     script(src='js/thescript.min.js')

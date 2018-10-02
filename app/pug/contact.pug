@@ -16,11 +16,30 @@ html(lang='en')
     // Header
     section.section-header.bg-theme.text-center
         h2 Get in Touch
-        h3 Talk to our team of expert consultants
-    //Sap section
-    section.section-intro.text-center
-        h3 SAP Business One
-        h4.text-muted The swiss army ERP package
+    //contact section
+    section.section-contact
+      .container
+        .row
+          .col-md-8
+            iframe.map.p-3(src="https://snazzymaps.com/embed/99538")
+          .col-md-4
+            h3 Talk to us
+            i.fa.fa-phone.mb-3.mr-3 
+            span.text-muted 082 905 8222
+            br
+            i.fa.fa-envelope.mb-3.mr-3  
+            span.text-muted info@digivate.co.za
+            br
+            i.fa.fa-phone.mb-3.mr-3 
+            span.text-muted 082 905 8222
+            br
+            a(href="") 
+              i.fa.fa-linkedin.mb-3.mr-3 
+              span.text-muted 082 905 8222
+            br
+            a(href="") 
+              i.fa.fa-facebook.mr-3 
+              span.text-muted 082 905 8222
     hr
     // Footer
     include includes/footer.pug
@@ -29,4 +48,5 @@ html(lang='en')
     script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
     // Plugin JavaScript
     script(src='vendor/jquery-easing/jquery.easing.min.js')
+    
     script(src='js/thescript.min.js')
