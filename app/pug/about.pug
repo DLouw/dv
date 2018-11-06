@@ -16,42 +16,138 @@ html(lang='en')
     // Header
     section.section-header.bg-theme.text-center
         h1.page-title About Us
-        //h3 World class ERP sollutions for ambitious SMEs
+        //h3 World class ERP solutions for ambitious SMEs
     //Content
     section.section-mission
-        .container.content-container
+        .container
             .row
                 .col-md-8
                     h2.comp-heading Business as
                       span 
                         h2.comp-heading.text-muted (un)
                       | usual
-                    p.content-p.text-muted Not all SMEs are created equal. Luckily, neither are all business partners. At Digivate, the key to our (and your) success lies in our appreciation of the uniqueness of each customer. We are not in the business of simply selling services, but rather labour to create mutually prosporous partnerships. No matter your vision, timeline or budget, we are eager to engage in a conversation about how to get your business bursting at the seams.
-                .col-md-4.mb-3
-                      //img.logo(src="img/logo.svg")
-                      p.text-muted Provide SMEs with no-nonsense, ROI driven sollutions to day to day business problems.
-                      h4.subscript - our mission
+                    p.content-p.text-muted.mt-3 Not all SMEs are created equal. Luckily, neither are all business partners. At Digivate, the key to our (and your) success lies in our appreciation of the uniqueness of each customer. We are not in the business of simply selling services, but rather labour to create mutually prosporous partnerships. No matter your vision, timeline or budget, we are eager to engage in a conversation about how to get your business bursting at the seams.
+                .col-md-4.mb-3.text-center
+                      img.logo.m-3(src="img/logo.svg")
+                      .text-left
+                        p.text-muted Provide SMEs with no-nonsense, ROI driven solutions to day to day business problems.
+                        h4.subscript - our mission
     hr
-    section.section-whatwedo.text-center
+    section.section-content.text-center
+        h3 The Digivate difference
+        p.content-p.mx-auto.text-muted.mb-5 Digivate believes in a methodical, proven aproach to take SMEs from grassroots to greatness. The difference is, that we place the same emphasis on providing continuous value to our existing clientelle.
         .container
-          h3.mb-3 What we do- exactly
-          p.text-muted When we say "no-nonsense" we mean it. Here's how we transform businesses:
+            .row
+                .col-md-5.text-center
+                    i.fas.fa-server.theme-icon.text-primary
+                    h4 Creating value
+                    ul.do-list.mt-2.text-left.corebusiness-desc.collapse.text-muted
+                      li
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Comprehensive business analysis
+                      li
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Identification of inefficient business functions
+                      li
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Provide cutting edge business software solutions
+                      //li
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Fascilitate operational integration.
+                      //li 
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Provide ongoing support.
+                .col-md-2
+                    h2.text-theme /
+                .col-md-5.text-center
+                    i.fas.fa-cloud.theme-icon.text-primary
+                    h4 Sustaining growth
+                    ul.do-list.mt-2.text-left.corebusiness-desc.collapse.text-muted
+                      //li
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Over
+                      //li
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Fascilitating of operational integration.
+                      li
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Helping shape solutions into operations
+                      li
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Forging partnerships in our extensive network 
+                      li
+                          i.fa.fa-angle-right.text-theme
+                          span.tw1 Ongoing, long-term support 
+                .col-12
+                    a(data-toggle="collapse", data-target=".corebusiness-desc")
+                      .fa.fa-angle-down.mr-2.mt-3
+                      span read more
+    //section.section-whatwedo.text-center
+        .container
+          h3.mb-3 Core business
+          p.content-p.mx-auto.text-muted.mb-3 Digivate believes in a methodical, proven aproach to take SMEs from grassroots to greatness. The difference is, that we place equal emphasis on providing continuous value to our existing clientelle.
           .row
-            .col-md-6.centre-xy
-               img.logo.mb-3(src="img/logo.svg")
             .col-md-6
+                h4 Empowering new customers
                 ul.do-list.text-left
                     li
-                        p.tw1 Comprehensive business analysys.
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Comprehensive business analysis.
                     li
-                        p.tw1 Identification of business functions which can be improved or automated.
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Identify inefficient business functions.
                     li
-                        p.tw1 Supply cutting edge business software sollutions. 
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Deploy cutting edge business software solutions. 
                     li
-                        p.tw1 Fascilitate a seamless integration into current operations.
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Fascilitate operational integration.
                     li
-                        p.tw1 Provide ongoing support.
-
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Provide ongoing support.
+            .col-md-6
+                h4 Supporting 
+                ul.do-list.text-left
+                    li
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Comprehensive business analysis.
+                    li
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Identify inefficient business functions.
+                    li
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Deploy cutting edge business software solutions. 
+                    li
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Fascilitate operational integration.
+                    li
+                        i.fa.fa-angle-right.text-theme
+                        span.tw1 Provide ongoing support.
+    hr
+    section.section-intro.content-section.text-center
+      h3 Our Partners
+      p.content-p.text-muted In business, contacts are currency. Take advantage of our vast network of powerful  partners and move beyond the limits of your resources.
+      .container.mt-3
+        .row
+          .col-md-4.mt-3
+            img.partner-logo(src='img/partners/altura.png', alt='')
+          .col-md-4.mt-3
+            img.partner-logo(src='img/partners/sap_silver_partner.svg', alt='')
+          .col-md-4.mt-3
+            img.partner-logo(src='img/partners/boyumit.png', alt='')
+          .col-md-4.mt-3
+            img.partner-logo(src='img/partners/databalance.png', alt='')
+          .col-md-4.mt-3
+            img.partner-logo(src='img/partners/evolvemed.png', alt='')
+          .col-md-4.mt-3
+            img.partner-logo(src='img/partners/huawei.jpeg', alt='')
+          .col-md-4.mt-3
+            img.partner-logo(src='img/partners/ivend.png', alt='')
+          .col-md-4.mt-3
+            img.partner-logo(src='img/partners/smarthr.gif', alt='')
+          .col-md-4.mt-3
+            img.partner-logo(src='img/partners/baruch.png', alt='')
+    hr
     // Footer
     include includes/footer.pug
     // Bootstrap core JavaScript

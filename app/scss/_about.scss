@@ -1,21 +1,26 @@
 //About page stylesheet
 .page-about{
   
-  .section-whatwedo{
-    .logo{
-        width: 150px;
-    }
-  }
-  
   .section-mission{
     .subscript{
       color: $theme-primary;
+    }
+    .logo{
+        width: 100px;
     }
   }
   
   .comp-heading {
     display: inline;
   }
+  
+  .partner-logo{
+    width: 100px;
+  }
+  
+  .do-list{
+        list-style: none;
+      }
     
 //    .section-content{
 //        .content-container{

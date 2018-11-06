@@ -53,7 +53,7 @@
         .navbar-nav > li > a:focus {
             color: fade-out(black, .3);
             &:hover {
-                color: white;
+                color: $theme-primary;
             }
         }
         &.navbar-shrink {

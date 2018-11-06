@@ -1,0 +1,126 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='digivate home')
+    meta(name='author', content='Dehan Louw')
+    title digivate
+    
+    // Head links
+    include includes/headlinks.pug
+    
+  body.page-solutions#page-top(onload="splash(3000)")
+    // Navigation
+    include includes/navbar.pug
+    // Header
+    section.section-header.bg-theme.text-center
+        h1.page-title Solutions
+        //h3 World class ERP solutions for ambitious SMEs
+    //Content
+    section.section-content.text-center
+        h3.mb-3 Introducing
+        img.logo.mb-3(src="img/saponelogo.png")
+        p.content-p.mx-auto.mb-5 Industry leading tools to streamline all your business processes. Available to small enterprises in one simple, affordable package. 
+        a.js-scroll-trigger.text-dark(href="#features")
+          .fa.fa-angle-down.mr-2.mt-3
+          span Features
+    hr
+    section.section-content.text-center
+        h3#features SAP Business One key features
+        p.content-p.mx-auto.text-muted.mb-5 Modern business, solved from A to Z. SAP Business One holistically addresses the business needs of growing SMEs. 
+        .container
+            .row
+                .col-md-4.text-center
+                    i.fas.fa-credit-card.theme-icon.text-primary
+                    h4 Financial Management
+                    p.text-muted Reduce the complexity of your financials while accessing accurate financial reporting.
+                .col-md-4.text-center
+                    i.fas.fa-users.theme-icon.text-primary
+                    h4 Sales and CRM
+                    p.text-muted The freedom to create new prospects while still managing existing relationships.
+                .col-md-4.text-center
+                    i.fas.fa-boxes.theme-icon.text-primary
+                    h4 Inventory control
+                    p.text-muted Real-time views on stock accross multiple warehouses and increased operational efficiency.
+                .col-md-4.text-center
+                    i.fas.fa-brain.theme-icon.text-primary
+                    h4 Business inteligence
+                    p.text-muted Get invaluable insights into the mechanics of your business activities.
+                .col-md-4.text-center
+                    i.fas.fa-chart-bar.theme-icon.text-primary
+                    h4 Analytics and reporting
+                    p.text-muted Get the right metrics to the right people at the right time.
+                .col-md-4.text-center
+                    i.fas.fa-compress.theme-icon.text-primary
+                    h4 Industry specific ERP solutions
+                    p.text-muted Check compliance and uniformity of your list, with extended ERP solutions.
+                //.col-12.text-center
+                  a(href="")
+                    i.fa.fa-download.mr-3.mt-3
+                    span Read more
+    hr
+    section.section-content.text-center
+        .video-wrapper.mx-auto
+          iframe(src="https://www.youtube.com/embed/CHe6LLvkDnY?rel=0&autoplay=1&mute=1&showinfo=0&controls=0&loop=1&playlist=CHe6LLvkDnY", frameborder="0",  allowfullscreen)
+    hr
+    section.section-content.text-center
+        h3 Deployment options
+        p.content-p.mx-auto.text-muted.mb-5 SAP Business One can be deployed in two distinct ways- let us help you decide which is right for your business.
+        .container
+            .row
+                .col-md-5.text-center
+                    i.fas.fa-server.theme-icon.text-primary
+                    h4 On-premisis
+                    p.deploy-desc.text-muted.collapse Take full control of your environment with local installation on your own infrastructure. A complete, hands-on approach to digital business.
+                .col-md-2
+                    h2.text-theme /
+                .col-md-5.text-center
+                    i.fas.fa-cloud.theme-icon.text-primary
+                    h4 Cloud
+                    p.deploy-desc.text-muted.collapse Take advantage of our extensive digital infrastructure. It's all the power of SAP Business One- now in the cloud. 
+                .col-12
+                    a(data-toggle="collapse", data-target=".deploy-desc")
+                      .fa.fa-angle-down.mr-2.mt-3
+                      span read more
+    hr
+    section.section-mobile.section-content.text-center.text-light
+        .overlay
+        h3 SAP Business One Service mobile app
+        p.content-p.mx-auto.mb-5.text-muted Introducing the power of SAP Business One on the go. Increase the agility and reach of your business tools even further.
+        .topItem.collapse.container
+          .row
+            .col-6.text-left
+              h4 Features
+              ul
+                li
+                  p View your assigned service tickets
+                li
+                  p Call customers or view their addresses on Maps
+                li
+                  p Scan QR codes to identify and update items
+                li
+                  p Instantly add a sales order to a service ticket
+            .col-6
+              a(href="https://itunes.apple.com/us/app/sap-business-one-service/id1385208654?mt=8", target="_blank")
+                img.appstore-logo(src="img/appstore.png")
+        a(data-toggle="collapse", data-target=".topItem")
+                      .fa.fa-angle-down.mr-2.mt-3
+                      span Set the service team free
+        
+    hr
+    section.section-content.text-center
+      h3 Get the specifics
+      p.content-p.text-muted.mx-auto Download the official document for more details on what SAP Business One can do for your business.
+      a(href="img/brief.pdf", target="_blank")
+        i.fa.fa-download.mr-3.mt-3
+        span Download
+    hr
+    // Footer
+    include includes/footer.pug
+    // Bootstrap core JavaScript
+    script(src='vendor/jquery/jquery.min.js')
+    script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+    // Plugin JavaScript
+    script(src='vendor/jquery-easing/jquery.easing.min.js')
+    script(src='js/thescript.min.js')

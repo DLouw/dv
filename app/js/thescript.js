@@ -100,10 +100,10 @@ $(document).ready(function(){
     
     //About page animation
     //What we do list 
-    var aboutTween = TweenMax.staggerFrom(".page-about .tw1", 1, {opacity: 0, scale: 1.5, ease:Power3.easeIn}, 0.2);
-    var featuresScene2 = new ScrollMagic.Scene({triggerElement:".section-whatwedo .do-list"})
-            .setTween(aboutTween)
-            .addTo(controller);
+//    var aboutTween = TweenMax.staggerFrom(".page-about .tw1", 1, {opacity: 0, scale: 1.5, ease:Power3.easeIn}, 0.2);
+//    var featuresScene2 = new ScrollMagic.Scene({triggerElement:".section-whatwedo .do-list"})
+//            .setTween(aboutTween)
+//            .addTo(controller);
     
     
 });

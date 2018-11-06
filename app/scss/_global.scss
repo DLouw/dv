@@ -20,14 +20,15 @@ body {
 }
 
 a {
-    color: black;
+    cursor: pointer;
+    color: $theme-primary;
     @include transition-all;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: darken($theme-primary, 20%);
         text-decoration: none;
     }
-    
+      
 }
 
 a:focus { outline: none }
@@ -94,8 +95,17 @@ section {
     background: url('../img/bg-pattern2.png'), linear-gradient(45deg, $theme-secondary, $theme-tertiary);
 }
 
+.text-theme{
+  color: $theme-primary;
+}
+
+.fa{
+  margin-right: 5px;
+}
+
 .content-p{
     max-width: 500px;
+  margin: 0 auto;
 }
 
 .theme-icon{

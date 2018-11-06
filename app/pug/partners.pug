@@ -16,12 +16,25 @@ html(lang='en')
     // Header
     section.section-header.bg-theme.text-center
         h2 Our Partners
-        h3 Digivate is allied with all the industry giants
     //Sap section
-    section.section-intro.text-center
-        h3 SAP Business One
-        h4.text-muted The swiss army ERP package
+    section.section-intro.content-section.text-center
+        h3 Allied with industry giants
+        p.content-p.text-muted In business, contacts are currency. Take advantage of our vast network of powerful  partners and move beyond the limits of your resources.
+        .container
+          .row
+            .col-md-4.mt-3
+             img.partner-logo(src='img/sap_silver_partner.svg', alt='')
+            .col-md-4.mt-3
+             img.partner-logo(src='img/sap_silver_partner.svg', alt='')
+            .col-md-4.mt-3
+             img.partner-logo(src='img/sap_silver_partner.svg', alt='')
     hr
+    section.section-content.text-center
+      h3 In the business of business
+      p.content-p.text-muted.mb-3 Planning your next big move? Let us assist you in finding the right partner for the journey. It's who you know, after all...
+      a.link-primary(href="contact.html")
+        span.mr-3 Get in touch
+        i.fa.fa-angle-right
     // Footer
     include includes/footer.pug
     // Bootstrap core JavaScript

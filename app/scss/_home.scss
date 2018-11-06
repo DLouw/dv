@@ -299,14 +299,21 @@
 
     //Contact section
     .section-contact {
+      
+      //color: black;
+      
+      #mailaddress{
+        color: black;
+      }
+      
         text-align: center;
 
-        background: url('../img/bg-pattern2.png'), linear-gradient(to left, $theme-tertiary, $theme-tertiary);
+        //background: url('../img/bg-pattern2.png'), linear-gradient(to left, $theme-tertiary, $theme-tertiary);
 
         .icon{
             font-size: 40px;
             margin-bottom: 15px;
-            color: rgb(33, 37, 41);
+            //color: rgba(black, 0.7);
         }
 
     }
