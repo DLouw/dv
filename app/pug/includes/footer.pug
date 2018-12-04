@@ -1,14 +1,15 @@
+include privacyModal.pug
 footer
       .container
         a.mb-5
             img.logo.mb-2(src="../img/logo.svg")
             p Accelerating growth. Catalysing business.
-        //ul.list-inline
+        ul.list-inline
           li.list-inline-item
-            a(href='#') Privacy
+            a(href='#', data-toggle="modal", data-target="#privacyModal") Privacy
           li.list-inline-item
             a(href='#') Terms
-          li.list-inline-item
+          //li.list-inline-item
             a(href='#') FAQ
         p.mt-3 © Created by Tourmalet Media 2018. All Rights Reserved.
         
